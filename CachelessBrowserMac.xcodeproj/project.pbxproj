@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		651FD4D815867C5B0017CF29 /* WebPreferencesPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPreferencesPrivate.h; sourceTree = "<group>"; };
 		65A008FF1580D3420090FDBA /* CachelessBrowserMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CachelessBrowserMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A009031580D3420090FDBA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		65A009061580D3420090FDBA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -124,6 +125,7 @@
 			children = (
 				65A009391580D9450090FDBA /* CachelessBrowserMac.entitlements */,
 				65A009151580D3420090FDBA /* StoryAppDelegate.h */,
+				651FD4D815867C5B0017CF29 /* WebPreferencesPrivate.h */,
 				65A009161580D3420090FDBA /* StoryAppDelegate.m */,
 				65A009181580D3430090FDBA /* MainMenu.xib */,
 				65A0090A1580D3420090FDBA /* Supporting Files */,
@@ -385,7 +387,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CachelessBrowserMac/CachelessBrowserMac-Prefix.pch";
 				INFOPLIST_FILE = "CachelessBrowserMac/CachelessBrowserMac-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -398,7 +402,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CachelessBrowserMac/CachelessBrowserMac-Prefix.pch";
 				INFOPLIST_FILE = "CachelessBrowserMac/CachelessBrowserMac-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -450,6 +457,7 @@
 				65A009331580D3430090FDBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65A009341580D3430090FDBA /* Build configuration list for PBXNativeTarget "CachelessBrowserMacTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +466,7 @@
 				65A009361580D3430090FDBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
