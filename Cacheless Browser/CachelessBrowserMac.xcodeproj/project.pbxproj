@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65A009041580D3420090FDBA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A009031580D3420090FDBA /* Cocoa.framework */; };
+		65A0090E1580D3420090FDBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65A0090C1580D3420090FDBA /* InfoPlist.strings */; };
+		65A009101580D3420090FDBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A0090F1580D3420090FDBA /* main.m */; };
+		65A009141580D3420090FDBA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 65A009121580D3420090FDBA /* Credits.rtf */; };
+		65A009171580D3420090FDBA /* StoryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A009161580D3420090FDBA /* StoryAppDelegate.m */; };
+		65A0091A1580D3430090FDBA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65A009181580D3430090FDBA /* MainMenu.xib */; };
+		65A009221580D3430090FDBA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A009211580D3430090FDBA /* SenTestingKit.framework */; };
+		65A009231580D3430090FDBA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A009031580D3420090FDBA /* Cocoa.framework */; };
+		65A0092B1580D3430090FDBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65A009291580D3430090FDBA /* InfoPlist.strings */; };
+		65A0092E1580D3430090FDBA /* CachelessBrowserMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A0092D1580D3430090FDBA /* CachelessBrowserMacTests.m */; };
+		65A009381580D6060090FDBA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A009371580D6060090FDBA /* WebKit.framework */; };
+		65A0093B1580E16E0090FDBA /* retinaiPAD.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A0093A1580E16E0090FDBA /* retinaiPAD.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65A009241580D3430090FDBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65A008F61580D3420090FDBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65A008FE1580D3420090FDBA;
+			remoteInfo = CachelessBrowserMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		651FD4D815867C5B0017CF29 /* WebPreferencesPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPreferencesPrivate.h; sourceTree = "<group>"; };
+		65A008FF1580D3420090FDBA /* CachelessBrowserMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CachelessBrowserMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65A009031580D3420090FDBA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		65A009061580D3420090FDBA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		65A009071580D3420090FDBA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		65A009081580D3420090FDBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65A0090B1580D3420090FDBA /* CachelessBrowserMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CachelessBrowserMac-Info.plist"; sourceTree = "<group>"; };
+		65A0090D1580D3420090FDBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65A0090F1580D3420090FDBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65A009111580D3420090FDBA /* CachelessBrowserMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CachelessBrowserMac-Prefix.pch"; sourceTree = "<group>"; };
+		65A009131580D3420090FDBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		65A009151580D3420090FDBA /* StoryAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryAppDelegate.h; sourceTree = "<group>"; };
+		65A009161580D3420090FDBA /* StoryAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryAppDelegate.m; sourceTree = "<group>"; };
+		65A009191580D3430090FDBA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		65A009201580D3430090FDBA /* CachelessBrowserMacTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CachelessBrowserMacTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65A009211580D3430090FDBA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		65A009281580D3430090FDBA /* CachelessBrowserMacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CachelessBrowserMacTests-Info.plist"; sourceTree = "<group>"; };
+		65A0092A1580D3430090FDBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65A0092C1580D3430090FDBA /* CachelessBrowserMacTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CachelessBrowserMacTests.h; sourceTree = "<group>"; };
+		65A0092D1580D3430090FDBA /* CachelessBrowserMacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CachelessBrowserMacTests.m; sourceTree = "<group>"; };
+		65A009371580D6060090FDBA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		65A009391580D9450090FDBA /* CachelessBrowserMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CachelessBrowserMac.entitlements; sourceTree = "<group>"; };
+		65A0093A1580E16E0090FDBA /* retinaiPAD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retinaiPAD.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65A008FC1580D3420090FDBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A009381580D6060090FDBA /* WebKit.framework in Frameworks */,
+				65A009041580D3420090FDBA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65A0091C1580D3430090FDBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A009221580D3430090FDBA /* SenTestingKit.framework in Frameworks */,
+				65A009231580D3430090FDBA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65A008F41580D3420090FDBA = {
+			isa = PBXGroup;
+			children = (
+				65A0093A1580E16E0090FDBA /* retinaiPAD.png */,
+				65A009371580D6060090FDBA /* WebKit.framework */,
+				65A009091580D3420090FDBA /* CachelessBrowserMac */,
+				65A009261580D3430090FDBA /* CachelessBrowserMacTests */,
+				65A009021580D3420090FDBA /* Frameworks */,
+				65A009001580D3420090FDBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65A009001580D3420090FDBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65A008FF1580D3420090FDBA /* CachelessBrowserMac.app */,
+				65A009201580D3430090FDBA /* CachelessBrowserMacTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65A009021580D3420090FDBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65A009031580D3420090FDBA /* Cocoa.framework */,
+				65A009211580D3430090FDBA /* SenTestingKit.framework */,
+				65A009051580D3420090FDBA /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65A009051580D3420090FDBA /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65A009061580D3420090FDBA /* AppKit.framework */,
+				65A009071580D3420090FDBA /* CoreData.framework */,
+				65A009081580D3420090FDBA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		65A009091580D3420090FDBA /* CachelessBrowserMac */ = {
+			isa = PBXGroup;
+			children = (
+				65A009391580D9450090FDBA /* CachelessBrowserMac.entitlements */,
+				65A009151580D3420090FDBA /* StoryAppDelegate.h */,
+				651FD4D815867C5B0017CF29 /* WebPreferencesPrivate.h */,
+				65A009161580D3420090FDBA /* StoryAppDelegate.m */,
+				65A009181580D3430090FDBA /* MainMenu.xib */,
+				65A0090A1580D3420090FDBA /* Supporting Files */,
+			);
+			path = CachelessBrowserMac;
+			sourceTree = "<group>";
+		};
+		65A0090A1580D3420090FDBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65A0090B1580D3420090FDBA /* CachelessBrowserMac-Info.plist */,
+				65A0090C1580D3420090FDBA /* InfoPlist.strings */,
+				65A0090F1580D3420090FDBA /* main.m */,
+				65A009111580D3420090FDBA /* CachelessBrowserMac-Prefix.pch */,
+				65A009121580D3420090FDBA /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65A009261580D3430090FDBA /* CachelessBrowserMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				65A0092C1580D3430090FDBA /* CachelessBrowserMacTests.h */,
+				65A0092D1580D3430090FDBA /* CachelessBrowserMacTests.m */,
+				65A009271580D3430090FDBA /* Supporting Files */,
+			);
+			path = CachelessBrowserMacTests;
+			sourceTree = "<group>";
+		};
+		65A009271580D3430090FDBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65A009281580D3430090FDBA /* CachelessBrowserMacTests-Info.plist */,
+				65A009291580D3430090FDBA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65A008FE1580D3420090FDBA /* CachelessBrowserMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65A009311580D3430090FDBA /* Build configuration list for PBXNativeTarget "CachelessBrowserMac" */;
+			buildPhases = (
+				65A008FB1580D3420090FDBA /* Sources */,
+				65A008FC1580D3420090FDBA /* Frameworks */,
+				65A008FD1580D3420090FDBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CachelessBrowserMac;
+			productName = CachelessBrowserMac;
+			productReference = 65A008FF1580D3420090FDBA /* CachelessBrowserMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65A0091F1580D3430090FDBA /* CachelessBrowserMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65A009341580D3430090FDBA /* Build configuration list for PBXNativeTarget "CachelessBrowserMacTests" */;
+			buildPhases = (
+				65A0091B1580D3430090FDBA /* Sources */,
+				65A0091C1580D3430090FDBA /* Frameworks */,
+				65A0091D1580D3430090FDBA /* Resources */,
+				65A0091E1580D3430090FDBA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65A009251580D3430090FDBA /* PBXTargetDependency */,
+			);
+			name = CachelessBrowserMacTests;
+			productName = CachelessBrowserMacTests;
+			productReference = 65A009201580D3430090FDBA /* CachelessBrowserMacTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65A008F61580D3420090FDBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Story;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 65A008F91580D3420090FDBA /* Build configuration list for PBXProject "CachelessBrowserMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 65A008F41580D3420090FDBA;
+			productRefGroup = 65A009001580D3420090FDBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65A008FE1580D3420090FDBA /* CachelessBrowserMac */,
+				65A0091F1580D3430090FDBA /* CachelessBrowserMacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65A008FD1580D3420090FDBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A0090E1580D3420090FDBA /* InfoPlist.strings in Resources */,
+				65A009141580D3420090FDBA /* Credits.rtf in Resources */,
+				65A0091A1580D3430090FDBA /* MainMenu.xib in Resources */,
+				65A0093B1580E16E0090FDBA /* retinaiPAD.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65A0091D1580D3430090FDBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A0092B1580D3430090FDBA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65A0091E1580D3430090FDBA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65A008FB1580D3420090FDBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A009101580D3420090FDBA /* main.m in Sources */,
+				65A009171580D3420090FDBA /* StoryAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65A0091B1580D3430090FDBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A0092E1580D3430090FDBA /* CachelessBrowserMacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65A009251580D3430090FDBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65A008FE1580D3420090FDBA /* CachelessBrowserMac */;
+			targetProxy = 65A009241580D3430090FDBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65A0090C1580D3420090FDBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65A0090D1580D3420090FDBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		65A009121580D3420090FDBA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65A009131580D3420090FDBA /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		65A009181580D3430090FDBA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65A009191580D3430090FDBA /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		65A009291580D3430090FDBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65A0092A1580D3430090FDBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65A0092F1580D3430090FDBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		65A009301580D3430090FDBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		65A009321580D3430090FDBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CachelessBrowserMac/CachelessBrowserMac.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CachelessBrowserMac/CachelessBrowserMac-Prefix.pch";
+				INFOPLIST_FILE = "CachelessBrowserMac/CachelessBrowserMac-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		65A009331580D3430090FDBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CachelessBrowserMac/CachelessBrowserMac.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CachelessBrowserMac/CachelessBrowserMac-Prefix.pch";
+				INFOPLIST_FILE = "CachelessBrowserMac/CachelessBrowserMac-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		65A009351580D3430090FDBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CachelessBrowserMac.app/Contents/MacOS/CachelessBrowserMac";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CachelessBrowserMac/CachelessBrowserMac-Prefix.pch";
+				INFOPLIST_FILE = "CachelessBrowserMacTests/CachelessBrowserMacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		65A009361580D3430090FDBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CachelessBrowserMac.app/Contents/MacOS/CachelessBrowserMac";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CachelessBrowserMac/CachelessBrowserMac-Prefix.pch";
+				INFOPLIST_FILE = "CachelessBrowserMacTests/CachelessBrowserMacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65A008F91580D3420090FDBA /* Build configuration list for PBXProject "CachelessBrowserMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65A0092F1580D3430090FDBA /* Debug */,
+				65A009301580D3430090FDBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65A009311580D3430090FDBA /* Build configuration list for PBXNativeTarget "CachelessBrowserMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65A009321580D3430090FDBA /* Debug */,
+				65A009331580D3430090FDBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65A009341580D3430090FDBA /* Build configuration list for PBXNativeTarget "CachelessBrowserMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65A009351580D3430090FDBA /* Debug */,
+				65A009361580D3430090FDBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65A008F61580D3420090FDBA /* Project object */;
+}
