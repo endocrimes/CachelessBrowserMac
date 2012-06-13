@@ -21,7 +21,8 @@ NSMutableArray *lines;
 @property (weak) IBOutlet NSTextField *URL;
 - (IBAction)go:(id)sender;
 - (IBAction)refresh:(id)sender;
-
+- (IBAction)openURL:(NSString *)url;
+- (IBAction)open:(NSString *)url;
 @property (weak) IBOutlet WebView *web;
 
 @end

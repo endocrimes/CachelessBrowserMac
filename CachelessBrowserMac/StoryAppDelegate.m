@@ -29,12 +29,53 @@
     [_web setPreferences:preg];
     [_web setFrameLoadDelegate:self];
     [self FetchHTMLCode:@"http://dantomlin.co.uk/distribution/cachelessver.txt"];
+   // [self open:@"http://google.com"];
     
 }
 - (void)webViewDidStartLoad:(WebView *)webView
 {
+}
+- (IBAction)open:(NSString *)url{
+    NSURL *myurl = [NSURL URLWithString:url];
+    if(!myurl.scheme)
+    {
+        NSString* modifiedURLString = [NSString stringWithFormat:@"http://%@", url];
+        url = [NSURL URLWithString:modifiedURLString];
+    }
+    /*URL Requst Object
+     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+     
+     //Load the request in the UIWebView.
+     [[_web mainFrame] loadRequest:requestObj];
+     */
+    NSURLRequest*request=[NSURLRequest requestWithURL:myurl];
+    StoryAppDelegate *myTempDel = [[StoryAppDelegate alloc]init];
+    NSWindow *newWindow = [[NSWindow alloc]init];
+    newWindow = [self window];
+    [myTempDel setWindow:newWindow];
+    [myTempDel openURL:url];
+
+    [newWindow makeKeyAndOrderFront:NSApp];
+    NSLog(@"Request Window");
+}
+- (IBAction)openURL:(NSString *)url{
+    NSURL *myurl = [NSURL URLWithString:url];
+    if(!myurl.scheme)
+    {
+        NSString* modifiedURLString = [NSString stringWithFormat:@"http://%@", url];
+        url = [NSURL URLWithString:modifiedURLString];
+    }
+    /*URL Requst Object
+     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+     
+     //Load the request in the UIWebView.
+     [[_web mainFrame] loadRequest:requestObj];
+     */
+    NSURLRequest*request=[NSURLRequest requestWithURL:myurl];
+  //  StoryAppDelegate *myTempDel = [[StoryAppDelegate alloc]init];
     
-    
+    [[_web mainFrame] loadRequest:request];
+    NSLog(@"Request sent");
 }
 - (void)webView:(WebView *)webView didFinishLoadForFrame:(WebFrame *)frame
 {
