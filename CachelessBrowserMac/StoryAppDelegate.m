@@ -30,6 +30,22 @@
     [_web setFrameLoadDelegate:self];
     [self FetchHTMLCode:@"http://dantomlin.co.uk/distribution/cachelessver.txt"];
    // [self open:@"http://google.com"];
+    // register for keys throughout the device...
+    [NSEvent addGlobalMonitorForEventsMatchingMask:NSKeyDownMask handler:^(NSEvent *event){
+        
+        NSString *chars = [[event characters] lowercaseString];
+        unichar character = [chars characterAtIndex:0];
+        NSLog(@"keydown globally! Which key? This key: %c", character);
+        NSLog(@"%d", [event keyCode]);
+        int flags = [event modifierFlags];
+        int cmdDown = flags * NSCommandKeyMask;
+        if (([event keyCode] == 1) && cmdDown) {
+            sleep(2);
+            [self refresh:self];
+            NSLog(@"Refreshing");
+        }
+        
+    }];
     
 }
 - (void)webViewDidStartLoad:(WebView *)webView
@@ -152,6 +168,7 @@
             
             // write the downloaded file to documents dir
             [Appdata writeToFile:localFile atomically:YES];
+            
         }
     }
 }
